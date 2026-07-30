@@ -1,7 +1,26 @@
 aid: mekan
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mekan.png
 name: Mekan
-description: Mekan is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Mekan (somosmekan.com) is a Latin American software platform serving the
+  automotive sector, with solutions organized around two product lines - Autos (vehicles)
+  and Repuestos (auto parts / spare parts) - to help dealers, parts sellers, and automotive
+  businesses manage and grow their operations. Backed by 500 Global, the company was
+  surfaced as a portfolio-company lead and added to the API Evangelist network. At the
+  time of enrichment the public surface is a Spanish-language marketing site centered
+  on a "Agenda tu demo" (schedule-a-demo) flow, with WhatsApp and LinkedIn contact
+  channels and no publicly documented API, developer portal, SDKs, or technical
+  integration surface.
 url: https://raw.githubusercontent.com/api-evangelist/mekan/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Automotive
+- Auto Parts
+- Latin America
+- SaaS
+- Dealership
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mekan-domain-security.yml
 - type: Website
   url: https://somosmekan.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
